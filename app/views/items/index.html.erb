@@ -35,7 +35,11 @@
     <% @items.each do |item| %>
       <div class="col-3" style="border-radius:25px;">
 
-         <%= image_tag "1.jpg",height:"280px",width:"100%", style:"border-radius:25px"%>
+        <% if item.cover_image.attached?%>
+          <%= image_tag item.cover_image, height:"200px",width:"200px", style:"border-radius:25px"%>
+          <% else %>
+         <%= image_tag "1.jpg", height:"185px",width:"185px", style:"border-radius:25px"%>
+         <% end %>
 
          <div class="text-center">
             <h1 strong class="card-text"> <%= item.name %> </h1> </strong> 
