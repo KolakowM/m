@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+ .container{
+    background: rgb(254,242,209);
+    background: linear-gradient(0deg, rgba(254,242,209,1) 0%, rgba(245,195,59,0.66) 100%);
+ }
+
+ .navbar{
+    background-color: blanchedalmond;
+    color: black;
+ }
+
+ .row{
+    border-radius: 2px solid rgb(37, 35, 35) ;
+ }
