@@ -10,18 +10,20 @@
       </ul>
     </div>
   <% end %>
-
-  <div>
+<div class="form" style="margin:15px 50px 15px 120px">
+  <div> 
     <%= form.label :name, style: "display: block", class: 'form-label' %>
     <%= form.text_field :name, class: 'form-control' %>
   </div>  
 
-  <div>
-    <%= form.label :body, style: "display: block" %>
-    <%= form.text_field :body %>
+  <div >
+    <%= form.label :body, style: "display: block", class: 'form-label' %>
+    <%= form.text_area :body, class: 'form-control' %>
   </div>
-
+<br>
   <div>
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-success"%>
+    <%= link_to "Strona Główna", items_path, class:"btn btn-outline-dark" %>
   </div>
+</div>  
 <% end %>

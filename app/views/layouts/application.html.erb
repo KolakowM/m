@@ -12,10 +12,12 @@
   <body class="container">    
 <nav class="navbar">
   <div class="container-fluid" style="font-size:22px">
-    <a class="navbar-brand" href='items#index'>Biblioteka</a>
+    <a class="navbar-brand" href= <%=items_path %> > Biblioteka</a>
+
     <a class="nav-link" href="#">Psy</a>
     <a class="nav-link" href="#">Koty</a>
-    <%= link_to "Dodaj nowy rekord", new_item_path, class:"btn btn-outline-info" %>
+    
+    <%= link_to "Dodaj nowy rekord", new_item_path, class:"btn btn-outline-dark" %>
     <form class="d-flex" role="search">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Szukaj">
       <button class="btn btn-outline-success" type="submit">Szukaj</button>

@@ -15,8 +15,11 @@
  */
 
  .container{
-    background: rgb(254,242,209);
-    background: linear-gradient(0deg, rgba(254,242,209,1) 0%, rgba(245,195,59,0.66) 100%);
+   ackground-color: #8a8986;
+   ackground-image: linear-gradient(180deg, #FAD961 66%, #F76B1C 100%);
+   
+
+
  }
 
  .navbar{
@@ -24,6 +27,11 @@
     color: black;
  }
 
- .row{
-    border-radius: 2px solid rgb(37, 35, 35) ;
+ .col-4{
+    border-bottom:1px solid rgb(49, 44, 44) ;
+    
+    margin: 5px 0px 5px 0px;
+    padding: 2px;
  }
+
+
