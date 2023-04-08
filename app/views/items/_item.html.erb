@@ -1,12 +1,23 @@
 <div id="<%= dom_id item %>">
-  <p>
-    <strong>Nazwa:</strong>
-    <%= item.name %>
-  </p>
+  
+<div class="container row" >
+<div class="image col-6">
 
-  <p>
-    <strong>Opis:</strong>
-    <%= item.body %>
-  </p>
-
+  <% if item.cover_image.attached?%>
+      <%= image_tag item.cover_image, height:"380px",width:"480px", style:"border-radius:25px"%>
+      <% else %>
+      <%= image_tag "1.jpg", height:"185px",width:"185px", style:"border-radius:25px"%>
+  <% end %>
 </div>
+  <div class="text-center col-6">
+    <h1> <%= item.name %> </h1>
+     
+  <br><br>
+
+    <div class="text">
+      <p> <%= item.body %> </p>
+    </div>
+  </div>
+</div >
+
+</div> 

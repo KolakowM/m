@@ -25,6 +25,12 @@
     <%= form.label :body, style: "display: block", class: 'form-label' %>
     <%= form.text_area :body, class: 'form-control' %>
   </div>
+
+  <div >
+    <%= form.label :item_type, style: "display: block", class: 'form-label' %>
+    <%= form.select :item_type, Item.item_types.keys, { include_blank: 'Wybierz coś'}, class:"form-select" %>
+  </div>
+
 <br>
   <div>
     <%= form.submit class:"btn btn-success"%>
@@ -32,3 +38,4 @@
   </div>
 </div>  
 <% end %>
+

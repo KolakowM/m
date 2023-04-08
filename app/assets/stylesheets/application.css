@@ -14,9 +14,12 @@
  *= require_self
  */
 
- .container{
-   ackground-color: #8a8986;
-   ackground-image: linear-gradient(180deg, #FAD961 66%, #F76B1C 100%);
+ * {box-sizing: inherit;}
+
+
+.container{
+   background-color: #e4faed;
+   background-image: linear-gradient(180deg, #ffffff 66%, #ebfff3 100%);
    
 
 
@@ -27,11 +30,9 @@
     color: black;
  }
 
- .col-4{
-    border-bottom:1px solid rgb(49, 44, 44) ;
+.col-lg-4{
+    border:1px solid rgb(0, 0, 0) ;
     
     margin: 5px 0px 5px 0px;
     padding: 2px;
- }
-
-
+ } 

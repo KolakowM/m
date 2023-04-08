@@ -57,6 +57,14 @@ class ItemsController < ApplicationController
     end
   end
 
+  def kot
+    @items = Item.where(item_type: 'kot')
+  end
+
+  def pies
+    @items = Item.where(item_type: 'pies')
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_item
@@ -65,6 +73,6 @@ class ItemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def item_params
-      params.require(:item).permit(:name, :body, :cover_image)
+      params.require(:item).permit(:name, :body, :cover_image, :item_type)
     end
 end
