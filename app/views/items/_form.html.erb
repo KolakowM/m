@@ -11,28 +11,33 @@
     </div>
   <% end %>
 
+
+
+<div class="form" style="margin:15px 50px 15px 120px">
+
 <div class="my-5">
+ <strong>  <%= form.label "Zdjęcie poglądowe" , style: "display: block", class: 'form-label' %> </strong>
   <%= form.file_field :cover_image %>
 </div>
 
-<div class="form" style="margin:15px 50px 15px 120px">
-  <div> 
-    <%= form.label :name, style: "display: block", class: 'form-label' %>
+<div class="mb-8">
+    <%= form.label "Typ rekordu", style: "display: block", class: 'form-label' %>
+    <%= form.select :item_type, Item.item_types.keys, { include_blank: '-- Twój wybór --'}, class:"form-select" %>
+  </div>
+
+  <div class="mb-8"> 
+    <%= form.label "Nazwa rasy", style: "display: block", class: 'form-label' %>
     <%= form.text_field :name, class: 'form-control' %>
   </div>  
 
-  <div >
-    <%= form.label :body, style: "display: block", class: 'form-label' %>
-    <%= form.text_area :body, class: 'form-control' %>
+  <div class="mb-8">
+    <%= form.label "Opis rasy", style: "display: block", class: 'form-label' %>
+    <%= form.rich_text_area :body, class: 'form-control' %>
   </div>
-
-  <div >
-    <%= form.label :item_type, style: "display: block", class: 'form-label' %>
-    <%= form.select :item_type, Item.item_types.keys, { include_blank: 'Wybierz coś'}, class:"form-select" %>
-  </div>
+  
 
 <br>
-  <div>
+  <div class="mb-8">
     <%= form.submit class:"btn btn-success"%>
     <%= link_to "Strona Główna", items_path, class:"btn btn-outline-dark" %>
   </div>

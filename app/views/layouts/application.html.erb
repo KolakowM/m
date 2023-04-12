@@ -11,12 +11,12 @@
   </head>
 
   <body class="container">    
-<nav class="navbar">
+<nav class="navbar mb-5">
   <div class="container-fluid" style="font-size:22px">
    <!-- <a class="navbar-brand" href= <%=items_path %> > Biblioteka</a> -->
     <%= link_to 'Biblioteka', root_path, class:"nav-link"%> 
     <%= link_to 'Koty', kot_items_path, class:"nav-link" %>
-    <%= link_to 'Piesy', pies_items_path, class:"nav-link"%>
+    <%= link_to 'Psy', pies_items_path, class:"nav-link"%>
     
     <%= link_to "Dodaj nowy rekord", new_item_path, class:"btn btn-outline-dark" %>
     <form class="d-flex" role="search">
