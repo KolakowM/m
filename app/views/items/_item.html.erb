@@ -1,7 +1,8 @@
 <div id="<%= dom_id item %>">
 <br><br>
 <div class="row">
-<div class="image col-5">
+  <h1 style="margin:0px 15px 50px 0px"> <%= item.name %>  </h1>
+<div class="image">
 
   <% if item.cover_image.attached?%>
       <%= image_tag item.cover_image, height:"380px",width:"480px", style:"border-radius:25px"%>
@@ -9,15 +10,11 @@
       <%= image_tag "1.jpg", height:"185px",width:"185px", style:"border-radius:25px"%>
   <% end %>
 </div>
-  <div class="text-center col-7">
-    <h1> <%= item.name %> </h1>
-     
-  <br><br>
 
-    <div class="text">
-      <p> <%= item.body %> </p>
-    </div>
+  <div class="text">
+      <h5 style="margin:0px 15px 50px 0px"><br> <%= item.body %> </h5>
   </div>
+  
 </div >
 
 </div> 

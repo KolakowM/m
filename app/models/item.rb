@@ -5,5 +5,5 @@ class Item < ApplicationRecord
     has_rich_text :body
     has_one_attached :cover_image
 
-    enum item_type: %i[kot pies inne]
+    enum item_type: %i[kot pies]
 end
